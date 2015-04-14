@@ -40,7 +40,6 @@
 		<select ng-model="car.color"
 				ng-options="color for color in colors">
 				<option value="">Pick a color</option>
-			Pick a color
 		</select>
 		<button ng-click="park(car)" ng-disabled="!car.plate || !car.color">
 			Park
