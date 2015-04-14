@@ -1,7 +1,7 @@
 parking.controller("parkingCtrl", function ($scope) {
-	$scope.appTitle = "[PPackt] Parking";
+	$scope.appTitle = "[EXP] Parking";
 	$scope.cars = [];
-	$scope.colors = ["White", "Black", "Blue", "Red", "Silver"];
+	$scope.colors = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red", "Silver"];
 	
 	$scope.park = function (car) {
 		car.entrance = new Date();
