@@ -1,2 +1,4 @@
-.selected {
-	background-color: #AAFAD2;
+.selected {background-color: #AAFAD2;}
+.alert-topic{background-color:Red;}
+.alert-description{background-color:blue;}
+.headingpk{color: blue;}

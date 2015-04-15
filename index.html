@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/app.css">
 	</head>
 	<body ng-controller="parkingCtrl">
-		<h3 ng-bind="appTitle"></h3>
+		<h3 ng-bind="appTitle" class="headingpk"></h3>
 		<div ng-show="cars.length > 0">
 			<table>
 				<thead>
@@ -36,6 +36,10 @@
 		<div ng-hide="cars.length > 0">
 			The parking lot is empty
 		</div>
+		<alert ng-show="showAlert" 
+				topic="alertTopic" 
+				description="alertMessage"
+				close="closeAlert()"></alert>
 		<input type="text" ng-model="car.plate" placeholder="What's the plate?"/>
 		<select ng-model="car.color"
 				ng-options="color for color in colors">
