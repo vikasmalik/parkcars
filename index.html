@@ -1,7 +1,7 @@
 <!doctype html>
 <html ng-app="parking">
 	<head>
-		<title>[Packtt] Parking</title>
+		<title>[EXPPPPPPP] Parking</title>
 		<script src="lib/angular.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/controllers.js"></script>
@@ -37,7 +37,7 @@
 		<div ng-hide="cars.length > 0">
 			The parking lot is empty
 		</div>
-		<alert ng-show="showAlert" 
+		<alert ng-include src="templateUrl" ng-show="showAlert" 
 				topic="alertTopic" 
 				description="alertMessage"
 				close="closeAlert()"></alert>
